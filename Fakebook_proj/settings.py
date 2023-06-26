@@ -17,7 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(DEBUG=bool, ALLOWED_HOSTS=list)
-env_file = BASE_DIR / 'Fakebook_proj/env/.env.dev'
+env_file = BASE_DIR / 'Fakebook_proj/env/.env.staging'
 environ.Env.read_env(env_file=env_file, overwrite=True)
 
 # Quick-start development settings - unsuitable for production
